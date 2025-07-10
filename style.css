@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.sudoku-bk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#gameHeader {
+  max-width: 416px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#statusBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+#controls button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#controls button:hover {
+  background-color: #0056b3;
+}
+
+.sdk-table {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #000;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.sdk-row {
+  display: flex;
+}
+
+.sdk-col {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sdk-border {
+  border-bottom: 3px solid black;
+}
+
+.sdk-col:nth-child(3),
+.sdk-col:nth-child(6) {
+  border-right: 3px solid black;
+}
+
+.sdk-solution {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sdk-helper {
+  background-color: #e1f7d5;
+}
+
+.sdk-selected {
+  background-color: #cce5ff;
+}
+
+.sdk-ans-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sdk-btn {
+  background: #6c757d;
+  color: white;
+  padding: 6px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sdk-btn:hover {
+  background: #5a6268;
+}
+
+.sdk-no-show {
+  display: none !important;
+}
+
+.sdk-picker {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#victoryPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.popup-content button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background: #218838;
+}
+
+.active-mode {
+  background-color: #17a2b8 !important;
+}
+
+.sdk-col[contenteditable="true"] {
+  outline: none;
+  background: #fff8dc;
+}
+
+.sdk-invalid {
+  background-color: rgba(255, 0, 0, 0.3) !important;
+}
+
