@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sudoku Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="sudoku-bk">
+    <!-- Header -->
+    <div id="gameHeader">
+      <h1>🧠 Sudoku Challenge</h1>
+      <div id="statusBar">
+        <span>🕒 Timer: <span id="timer">00:00</span></span>
+        <span>❌ Mistakes: <span id="mistakeCount">0</span></span>
+        <span>🧩 Level: <span id="diffLevel">--</span></span>
+      </div>
+      <div id="controls">
+        <button id="restartBtn">🔄 Restart</button>
+        <button id="hintBtn">💡 Hint (3)</button>
+        <button id="solveBtn">✅ Solve</button>
+        <button id="customModeBtn">🧷 Custom Mode</button>
+        <button id="playModeBtn">🎮 Play Mode</button>
+      </div>
+    </div>
+
+    <!-- Sudoku Grid -->
+    <div class="sudoku-game"></div>
+
+    <!-- Victory Popup -->
+    <div id="victoryPopup" style="display:none;">
+      <div class="popup-content">
+        <h2>🎉 You Win!</h2>
+        <p>Time: <span id="finalTime"></span></p>
+        <button onclick="resetGame()">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
