@@ -19,11 +19,25 @@ The game offers multiple difficulty levels, real-time validation, and a responsi
 ## 🛠️ Technologies Used
 
 - **HTML5**
-- **CSS3**
+- **CSS**
 - **JavaScript**
 - **jQuery**
 
 ---
+
+## 📚 Data Structures & Algorithms Used 📊
+
+This project isn’t just about frontend — it implements classic **DSA concepts** behind the scenes for efficient gameplay and puzzle-solving.
+
+- 📑 **2D Matrix Operations** — The Sudoku board is managed as a 9×9 matrix.
+- 📏 **Constraint Validation** — Each move is validated against Sudoku rules for rows, columns, and subgrids.
+- 🔄 **Recursive Backtracking (DFS)** — The solver uses Depth-First Search and backtracking to fill the Sudoku board.
+- 📝 **Input Validation & Traversal** — Iterates through 2D arrays (matrices) for checking empty cells and conflicts.
+- ⚡ **Matrix Traversal Algorithms** — Row-wise, column-wise, and 3×3 subgrid checks implemented efficiently.
+- 🧩 **Sudoku Constraint Checking Algorithm** — Validates each input number against all Sudoku constraints before placing it.
+
+---
+
 
 ## 🚀 Getting Started
 
